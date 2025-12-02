@@ -28,7 +28,7 @@ Cons:
 ## Non-Linear Modelling with YDF
 Decision Forests (DFs) are a family of machine learning algorithms used for classification, regression, ranking, uplifting and anomaly detection, constructed from a collection of decision trees. Yggdrasil Decision Forests (YDF) is a comprehensive library for training, evaluating, interpreting, and serving these models.
 
-We note that Random Forests algorithm are more robust against overfitting whereas Gradient Boosted Decision Trees typicially enjoys higher accuracy in exchange for being more prone to overfitting. We tried both algorithms and noted that the Random Forests algorithm performed significantly worse on test data compared to Gradient Boosted. Hence, we will only be working with Gradient Boosted in this repository.
+We note that Random Forests algorithm is more robust against overfitting whereas Gradient Boosted Decision Trees typicially enjoys higher accuracy in exchange for being more prone to overfitting. We tried both algorithms and noted that the Random Forests algorithm performed significantly worse on test data compared to Gradient Boosted. Hence, we will only be working with Gradient Boosted in this repository.
 
 This and the next section is done in Python3 Jupyter Notebook. The same transformation is performed on the data and we used the exact same categories to build the model. We decided to split the data into 90% training data and 10% test data. We use Mean Absolute Percentage Error (MAPE) and Determination (R²) to measure the performance of the model.
 
