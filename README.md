@@ -14,10 +14,12 @@ Through trial-and-error process, we settled on a linear model that uses floor ar
 
 Through the process, we noted that the linear relationship between resale price and the chosen response variables are weak and not very responsive to data transformation. The final linear model only transformed resale price. We suspect that a non-linear approach will yield potentially much better results.
 
-We note the pros and cons of this method:
+We note the pros and cons of this method
+
 Pros:
 - Linear Modelling allows for exact reconstruction of the model used
 - Understand the relationship between data categories better through trial-and-error process
+
 Cons:
 - Very time-consuming, with any improvement being uncertain
 - Some problems are ill-suited for a linear solution
@@ -38,11 +40,13 @@ Results:
 
 The R² value on train data is a significant improvement from our linear model. The MAPE is around 9.3% and 11% for training and test data respectively, which is an acceptable error range for pricey things like flats. We do note that the R² value on test data suffered significantly, suggesting possible overfitting in the model. Unfortunately, YDF hides a lot of the finer details within the library itself and cannot be changed from the outside. This makes it hard to adjust certain factors like max height and learning rate that may reduce overfitting. This caused us to also consider the Gradient Boosted algorithm in SKLearn where these factors are easily adjustable.
 
-We note the pros and cons of the YDF library:
+We note the pros and cons of the YDF library
+
 Pros:
 - Provides very detailed report of model training loss over iterations, importance of explanatory variables, tree structure etc
 - Very easy to use, making it convenient to use it as a quick test
 - Automatically assigns data types as categorical or numerical in the model, which is very convenient as long as numerical data are all in float
+
 Cons:
 - Doesn't expose finer details of training, making it hard to tackle overfitting
 
