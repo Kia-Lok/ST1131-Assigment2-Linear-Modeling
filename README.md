@@ -59,6 +59,19 @@ Results:
 | Train  | 0.062 | 0.941 |
 | Test   | 0.104 | 0.815 |
 
+Immediately we can see that the R² value for both train and test are significantly better than the one we obtained from using YDF. The difference in R² is smaller, which would suggest less overfitting. However, difference in MAPE is larger, so its inconclusive whether overfitting is resolved to a large extent from using this method. We do note MAPE had a large improvement with training data, but only slightly improved in test data.
 
+We note the pros and cons of the SkLearn library
+
+Pros:
+- Many in-built methods to help with calculating metrics
+- Allows for more specifications to be made to the model and training process, giving the programmer more control
+
+Cons:
+- More tedious to set up compared to YDF library
+- Slight trial-and-error involved with toggling the different training parameters (Still a much larger improvement over trial-and-error with linear modelling)
 
 ## Evaluation and Conclusion
+Its clear that with the dataset given, a non-linear approach produced much better results compared to a simple linear regression model. We created ML models that are much better at explaining all points in the dataset and spent significantly less time compared to the model we created for the module.
+
+This exercise is to learn more about decision trees and the 2 common machine learning algoirthms involving them. It is to get comfortable with using libraries that can achieve much more accurate modeling done in much shorter time compared to manual inputs. However, investigation of variable relationship seems to require more human input to choose and discard good data. 
